@@ -1,0 +1,147 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-image: url("photos/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: "Baskerville Old Face";
+    max-width: 100%;
+}
+#img {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+#main {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    width: 60%;
+}
+#header {
+    font-size: 50px;
+}
+div:first-of-type {
+    margin-bottom: -2%;
+}
+#ariv {
+    margin-top: -20px;
+}
+#form {
+    font-size: 22px;
+    width: 60%;
+}
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: black solid 0.5px;
+    outline: none;
+    padding-bottom: 20px;
+    padding-top: 35px;
+}
+::placeholder {
+    color: black;
+}
+form {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr 1fr;
+}
+#email {
+    grid-column: 1/3;
+}
+button {
+    background-color: transparent;
+    border: black solid 1px;
+    font-family: "Baskerville Old Face";
+    margin-top: 20px;
+    padding: 15px;
+}
+button:hover {
+    background-color: lightgray;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    #main {
+        width: 90%;
+    }
+    #form {
+        width: 65%;
+    }
+}
+@media (min-width: 321px) and (max-width: 768px){
+    body {
+        background-position: right;
+        margin: 0;
+    }
+    #img {
+        margin-top: 5%;
+    }
+    #main {
+        background-color: rgb(255,255,255,.5);
+        margin-top: 5%;
+        padding-bottom: 10%;
+        width: 100%;
+    }
+    #form {
+        font-size: 20px;
+        width: 80%;
+    }
+    #header {
+        font-size: 35px;
+        width: 80%;
+    }
+    button{
+        margin-bottom: 10px;
+        margin-top: 25px;
+        padding: 15px;
+    }
+    input {
+        font-size: 10px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        background-position: right;
+        margin: 0;
+    }
+    #img {
+        padding: 5%;
+    }
+    #img > img {
+        width: 100%;
+    }
+    #main {
+        background-color: rgb(255,255,255,.5);
+        margin: 0px;
+        padding-bottom: 25%;
+        padding-top: 2%;
+        padding-left: 0%;
+        width: 100%;
+    }
+    #header > p {
+        font-size: 29px;
+        text-align: center;
+    }
+    #form {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    form {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    input {
+        width: 85%;
+    }
+    button {
+        width: 85%;
+    }
+}
